@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+       "use strict";
+       console.log(`${10 + 10 + "10"}`) 
+       // как числа 10 + 10 = 20 + "10" неявная конвертация в строку, в итоге равно "2010"
+       console.log(`${10 + "10" + 10}`)
+       // тут неявная конвертация в строку происходит раньше, поэтому мы получаем "101010"
+       console.log(`${10 + 10 + +"10"}`)
+       // как числа 10 + 10 = 20, + +"10", + преобразует "10" -> 10 в число, равно 30 
+       console.log(`${10 / -""}`)
+       // -"" = 0, 10/0 = -Infinity
+       console.log(`${10 / +"2,5"}`)
+       // из за запятой +"2,5" преобразуется в Nan, дальнейшие действия с NaN будут равны NaN
+    </script>
+</body>
+</html>
