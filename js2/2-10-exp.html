@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+       "use strict";
+       var val = prompt("Введите сумму?");
+       switch (val.slice(-1)) {
+           case "0":
+           case "5":
+           case "6":
+           case "7":
+           case "8":
+           case "9":
+               alert(`Ваша сумма в ${val} рублей зачислена`);
+               break;
+           case "1":
+               alert(`Ваша сумма в ${val} рубль зачислена`);
+               break;
+           case "2":
+           case "3":
+           case "4":
+               alert(`Ваша сумма в ${val} рубля зачислена`);
+               break;
+       }
+    </script>
+</body>
+</html>    
