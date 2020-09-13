@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+       "use strict";       
+       if (null == 0){
+           alert(0) // false
+       } else {
+           alert(1) // true
+       }
+       /* Гугл объясняет это так, что существует Абстрактный алгоритм сравнения равенств 
+                                                 (http://javascript.ru/ecma/part11#a-11.9.3)
+          опираясь на который мы понимаем, что после 1 шага нам необходимо перейти к 14,
+          т.к. типы сравниваемых значений не равны. Далее мы идем вплоть до 22 пункта, т.к. все
+          предыдущие нас не устраивают и по итогу получаем false, что и гласит в 22 пункте.
+        */  
+    </script>
+</body>
+</html>
